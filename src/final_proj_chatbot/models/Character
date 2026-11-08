@@ -1,0 +1,18 @@
+from typing import Any
+
+class Character:
+  def __init__(self, name: str, origin: str):
+    self.name = name
+    self.origin = origin
+    self.feats = []
+
+  def _add_feat(self, feat: CharacterFeat) -> None:
+    self.feats.append(feat)
+
+  # def query_feat()
+
+class CharacterFeat:
+  def __init__(self, name: str, description: str, power_level: int):
+    self.name = name
+    self.description = description
+    self.power_level = power_level
